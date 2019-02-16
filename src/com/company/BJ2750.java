@@ -21,12 +21,12 @@ public class BJ2750 {
             int key = array[i];
             int j = i - 1;
             while (j > -1 && key < array[j]) {
-                array[j+1] = array[j];
+                array[j + 1] = array[j];
                 j--;
             }
-            array[j+1] = key;
+            array[j + 1] = key;
         }
-        for(int i=0;i<array.length;i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
     }
